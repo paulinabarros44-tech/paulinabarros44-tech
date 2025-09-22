@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Jogo de Matemática</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Matemática</h1>
+        <p>Pontos: <span id="pontos">0</span></p>
+        <p>Recorde: <span id="recorde">0</span></p>
+        <p>Tempo: <span id="timer">30</span>s</p>
+
+        <form id="form-configuracao">
+            <label for="nivel-jogo">Nível:</label>
+            <select id="nivel-jogo">
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+            
+            <button type="submit">Começar o Jogo</button>
+        </form>
+
+        <div id="area-jogo" style="display:none;">
+            <h2 id="pergunta"></h2>
+            <div class="opcoes">
+                <button class="opcao"></button>
+                <button class="opcao"></button>
+                <button class="opcao"></button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
